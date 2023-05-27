@@ -1,0 +1,165 @@
+/************************  Hero Section Styles  *****************/
+.hero {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  text-align: center;
+}
+
+.home-hero {
+  padding: 5rem 1.5em 28rem;
+}
+
+.service-hero {
+  padding: 5rem 1.5em;
+}
+
+/* Home Hero Styles */
+.home-hero-img-block {
+  display: flex;
+  justify-content: center;
+}
+.home-hero-img {
+  margin-top: -286px;
+}
+
+.home-hero {
+  background-image: url(../assets/home/desktop/bg-pattern-hero-home.svg), url(../assets/home/desktop/image-hero-phone.png);
+  background-position: center, center 280px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.contact-hero {
+  background-color: var(--color-primary);
+  background-image: url(../assets/contact/mobile/bg-pattern-hero-contact-mobile.svg);
+  color: var(--color-light);
+  padding-block: 4.5rem;
+  padding-inline: 1.5rem;
+  text-align: center;
+}
+
+/* Design Hero Styles */
+.design-hero {
+  background-image: url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+
+/* About Hero Styles */
+.about-hero {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  background-image: url(../assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding-block: 0;
+  text-align: center;
+}
+
+.about-hero-text {
+  padding-block: 5rem;
+  padding-inline: 1.5rem;
+}
+
+.about-hero-title {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 48rem) {
+  .home-hero {
+    border-radius: 15px;
+    padding-inline: 3.5rem;
+  }
+
+  .home-hero .page-subhead {
+    width: 45ch;
+    margin-inline: auto;
+  }
+
+  .service-hero {
+    border-radius: 15px;
+  }
+
+  .about-hero-text {
+    padding-inline: 3.5rem;
+  }
+
+  .about-hero,
+  .motto {
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .contact-hero {
+    border-radius: 15px;
+    padding-inline: 3.5rem;
+  }
+
+  .contact-hero-text {
+    text-align: left;
+  }
+}
+
+@media (min-width: 56.25rem) {
+  .about-hero-text {
+    padding-block: 3.5rem;
+  }
+}
+
+@media (min-width: 59.375rem) {
+  .about-hero-text {
+    padding-block: 6rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .home-hero {
+    background-image: url(../assets/home/desktop/bg-pattern-hero-home.svg), url(../assets/home/desktop/image-hero-phone.png);
+    background-position: 100%, bottom -15.3125rem right -6rem;
+    padding: 12rem 4.5rem 8rem;
+  }
+
+  .home-hero-text {
+    width: 31rem;
+    text-align: left;
+  }
+
+  .home-hero .page-subhead {
+    margin-inline: 0;
+  }
+
+  .about-hero {
+    background-image: url(../assets/about/desktop/bg-pattern-hero-about-desktop.svg);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .contact-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5rem;
+    padding-block: 3.5rem;
+    padding-inline: 5.75rem;
+  }
+
+  .contact-hero-text {
+    max-width: 45ch;
+  }
+
+  .contact-hero-form {
+    flex: 1;
+  }
+}
+
+@media (min-width: 67.5rem) {
+  .about-hero-text {
+    padding-block: 6.5rem;
+    padding-inline: 5.75rem;
+  }
+}

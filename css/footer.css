@@ -1,0 +1,142 @@
+/*********** Footer Styles  *********/
+footer {
+  position: relative;
+  width: 100%;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+footer:before {
+  content: '';
+  background-color: var(--color-dark);
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: -6rem;
+  width: 100%;
+  z-index: -1;
+}
+
+footer.contact-footer::before {
+  top: 0;
+}
+
+/**** Logo and Navbar Styles ****/
+.footer-navbar {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5rem;
+}
+
+.footer-logo {
+  text-decoration: none;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid var(--color-medium-grey-alpha);
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer-logo img {
+  margin: 0 auto;
+  width: 195px;
+}
+
+.footer-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-nav-item a {
+  color: var(--color-light);
+  font-size: var(--fs-14);
+  letter-spacing: 2px;
+  line-height: 0.875;
+  text-transform: uppercase;
+}
+
+.footer-nav-item a:hover,
+.nav-item a:focus {
+  text-decoration: underline;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/**** Company Info Styles ****/
+.company-info,
+.company-contact {
+  color: var(--color-light-alpha);
+  line-height: 1.625;
+}
+
+.text-bold {
+  font-weight: var(--fw-700);
+}
+
+/**** Social Media Styles ****/
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-link {
+  display: inline-block;
+  font-size: var(--fs-24);
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.social-link:hover {
+  color: var(--color-secondary);
+}
+
+@media (min-width: 48rem) {
+  .footer-navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+    margin-bottom: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .footer-logo {
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+
+  .footer-logo img {
+    margin: 0;
+  }
+
+  .footer-nav-links {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .company-info,
+  .company-contact {
+    text-align: left;
+  }
+
+  .social {
+    align-self: flex-end;
+  }
+}

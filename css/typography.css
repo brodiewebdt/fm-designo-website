@@ -1,0 +1,138 @@
+h1,
+h2,
+h3 {
+  font-weight: var(--fw-500);
+  margin-bottom: 0.875rem;
+}
+
+h1 {
+  font-size: var(--fs-32);
+  line-height: 1;
+}
+
+h1.page-title {
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: var(--fs-32);
+  line-height: 1.125;
+}
+
+h2.home-feature-title {
+  font-size: var(--fs-20);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+h2.cta-title {
+  margin-bottom: 2rem;
+}
+
+h2.motto-title {
+  font-size: var(--fs-32);
+  margin-bottom: 1.5rem;
+}
+
+h2.location-country {
+  font-size: var(--fs-20);
+}
+
+h2.location-title {
+  font-size: var(--fs-32);
+  margin-bottom: 1.5rem;
+}
+
+h2.site-name {
+  color: var(--color-primary);
+  font-size: var(--fs-20);
+  font-weight: var(--fw-500);
+  letter-spacing: 5px;
+  line-height: 1.625;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: var(--fs-15);
+  line-height: 1.625;
+}
+
+p.page-subhead {
+  margin-bottom: 1.5rem;
+}
+
+p.cta-description {
+  margin-bottom: 2rem;
+}
+
+p.contact-hero-info {
+  margin-inline: auto;
+  max-width: 45ch;
+}
+
+p.site-description {
+  color: #7f8c9b;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 48rem) {
+  h1 {
+    font-size: var(--fs-48);
+  }
+
+  h1.contact-hero-title {
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  h1.about-hero-title {
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: var(--fs-32);
+  }
+
+  h2.home-feature-title {
+    margin-bottom: 1rem;
+  }
+
+  h2.motto-title {
+    font-size: var(--fs-40);
+  }
+
+  h2.location-title {
+    font-size: var(--fs-40);
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: var(--fs-16);
+  }
+
+  p.contact-hero-info {
+    margin-inline: 0;
+    max-width: initial;
+  }
+}
+
+@media (min-width: 64rem) {
+  h2.home-feature-title {
+    margin-bottom: 2rem;
+  }
+
+  p.cta-description {
+    margin-bottom: 0;
+  }
+}

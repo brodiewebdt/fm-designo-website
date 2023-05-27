@@ -1,0 +1,165 @@
+/*********** Service Section Styles  *********/
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 0;
+}
+
+.grid-container-inner-pages {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-blend-mode: overlay;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 15px;
+  color: #fff;
+  padding: 5.625rem 0;
+}
+
+.category:hover {
+  background-color: hsl(11, 100%, 80%, 0.3);
+}
+
+.category-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  margin-bottom: 0.75rem;
+}
+
+.category-text {
+  align-self: center;
+  justify-self: center;
+  z-index: 10;
+}
+
+.view-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: var(--fs-15);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.view-projects img {
+  height: 0.5em;
+  width: auto;
+}
+
+.services-web {
+  background-image: url('../assets/home/mobile/image-web-design.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.services-app {
+  background-image: url('../assets/home/mobile/image-app-design.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.services-graphic {
+  background-image: url('../assets/home/mobile/image-graphic-design.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 48rem) {
+  .services-web {
+    background-image: url('../assets/home/tablet/image-web-design.jpg');
+  }
+
+  .services-app {
+    background-image: url('../assets/home/tablet/image-app-design.jpg');
+  }
+
+  .services-graphic {
+    background-image: url('../assets/home/tablet/image-graphic-design.jpg');
+  }
+
+  .category {
+    padding: 6rem 0;
+  }
+
+  .category-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 56.25rem) {
+  .services-web {
+    background-image: url('../assets/home/desktop/image-web-design-large.jpg');
+  }
+
+  .services-app {
+    background-image: url('../assets/home/desktop/image-app-design.jpg');
+  }
+
+  .services-graphic {
+    background-image: url('../assets/home/desktop/image-graphic-design.jpg');
+  }
+
+  .category {
+    justify-content: center;
+    height: 100%;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .grid-container-inner-pages {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .web {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  .app {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .inner-app {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+
+  .inner-left {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+
+  .graphic {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .inner-graphic {
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+
+  .inner-right {
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+}

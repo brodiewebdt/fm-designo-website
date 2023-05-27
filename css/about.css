@@ -1,0 +1,85 @@
+@media (min-width: 48rem) {
+  .about-hero,
+  .motto {
+    border-radius: 15px;
+    overflow: hidden;
+  }
+}
+
+.about-image,
+.motto-image {
+  width: 100%;
+}
+
+.motto {
+  background-color: var(--color-tertiary);
+  background-image: url(../assets/shared/desktop/bg-pattern-three-circles.svg);
+  background-position: 0 100%;
+  text-align: center;
+}
+
+.motto-text {
+  padding-block: 5rem;
+  padding-inline: 1.5rem;
+}
+
+@media (min-width: 59.375rem) {
+  .motto-text {
+    padding-block: 6rem;
+  }
+}
+
+@media (min-width: 67.5rem) {
+  .motto-text {
+    padding-block: 9rem;
+  }
+}
+
+h2.motto-title {
+  color: var(--color-primary); 
+}
+
+.motto-text p:first-of-type {
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 48rem) {
+  .motto-text {
+    padding-inline: 3.75rem;
+  }
+}
+
+@media (min-width: 59.375rem) {
+  .about-hero,
+  .motto-two {
+    display: grid;
+    grid-template-columns: 1fr 476px;
+  }
+
+  .about-hero-text,
+  .motto-two-text {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+
+  .about-hero-image,
+  .motto-two-image {
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+
+  .motto-one {
+    display: grid;
+    grid-template-columns: 476px 1fr;
+  }
+
+  .motto-one-text {
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+
+  .motto-one-image {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+}
